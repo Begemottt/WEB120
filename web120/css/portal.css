@@ -1,0 +1,97 @@
+html {
+    background-color: rgb(119, 102, 102);
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+article.rightColumn { grid-area: rc }
+article.leftColumn { grid-area: lc }
+
+main {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+footer {
+    font-family: 'Roboto Mono', serif;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #888;
+}
+a:hover {
+    text-decoration: none;
+    color: #f66;
+}
+
+img {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Styles for phone screen sizes */
+@media all and (max-width: 650px){
+    main {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: "1fr";
+        grid-template-areas:
+            'lc'
+            'rc';
+        grid-gap: 1px;
+    }
+
+    img#desktop, img#tablet {
+        display: none;
+    }
+}
+
+/* Styles for tablet */
+@media all and (min-width: 651px) and (max-width: 850px) {
+    main {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-areas:
+            'lc rc rc'
+            'lc rc rc';
+        grid-gap: 1px;
+    }
+
+    img#phone, img#desktop {
+        display: none;
+    }
+}
+
+/* Styles for desktop */
+@media all and (min-width: 851px){
+    main {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-areas:
+            'rc rc lc'
+            'rc rc lc';
+        grid-gap: 1px;
+    }
+
+    img#phone, img#tablet {
+        display: none;
+    }
+}
