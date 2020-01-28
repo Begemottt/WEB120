@@ -17,24 +17,21 @@
         <link rel="stylesheet" href="css/portal.css">
         <link rel="stylesheet" href="css/nav.css">
 
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!-- Font Awesome JavaScipt file -->
-        <script src="https://use.fontawesome.com/7854527886.js"></script>
+        <script src="https://kit.fontawesome.com/e63bcbdc5d.js" crossorigin="anonymous"></script>
 
     </head>
 
     <body>
         <header>
-            <h1><i class="logo fa <?=$logo?>"><?=$PageID?></h1>
+            <h1><i class="logo fas <?=$logo?>"></i> <?=$PageID?></h1>
             <nav class="topnav" id="myTopnav">
 
                 <!-- PHP command that builds the nav list -->
                 <?=makeLinks($nav1)?>
 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <i class="fas fa-bars"></i>
                 </a>
             </nav>
         </header>

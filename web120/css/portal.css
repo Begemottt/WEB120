@@ -2,9 +2,6 @@ html {
     background-color: rgb(119, 102, 102);
     box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 article.rightColumn { grid-area: rc }
 article.leftColumn { grid-area: lc }

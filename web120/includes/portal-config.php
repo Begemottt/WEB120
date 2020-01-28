@@ -29,13 +29,13 @@ switch(THIS_PAGE){
 
     case 'index.php':
         $title = "Robin's WEB120 Title Page";
-        $logo = 'fa-home';
+        $logo = "fa-home";
         $PageID = 'Welcome';
     break;
 
     case 'contactme.php':
         $title = 'Contact';
-        $logo = 'fa-pencil-square-o';
+        $logo = 'fa-pen-square';
         $PageID = 'Contact Robin';
     break;
 
