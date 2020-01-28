@@ -1,7 +1,8 @@
+<?php include 'portal-config.php';?>
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <title>Robin VanGilder's WEB120 Portal</title>
+        <title><?=$title?></title>
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,18 +19,20 @@
 
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Font Awesome JavaScipt file -->
+        <script src="https://use.fontawesome.com/7854527886.js"></script>
+
     </head>
 
     <body>
         <header>
-            <h1>Robin VanGilder's WEB120 Portal</h1>
+            <h1><i class="logo fa <?=$logo?>"><?=$PageID?></h1>
             <nav class="topnav" id="myTopnav">
-                <a href="index.php" class="active">Home</a>
-                <a href="big/index.php">BIG</a>
-                <a href="aia.php">AIA</a>
-                <a href="flowchart.php">Flowchart</a>
-                <a href="fp/index.php">FP</a>
-                <a href="contactme.php">Contact</a>
+
+                <!-- PHP command that builds the nav list -->
+                <?=makeLinks($nav1)?>
+
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
