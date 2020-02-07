@@ -1,0 +1,47 @@
+/* Styles to make the tables stack correctly as grid objects */
+
+article.table1 { grid-area: t1 }
+article.table2 { grid-area: t2 }
+
+@media all and (min-width: 0px){
+    main#aia {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            't1'
+            't2';
+        grid-gap: 1px;
+    }
+}
+
+/*Styles for the two tables in aia.php*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th {
+    height: 40px;
+}
+
+th.two_column {
+    text-align: left;
+}
+
+td.audience {
+    width: 40%;
+}
+
+td.listbox {
+    width: 30%;
+}
+
+th:hover, td:hover {
+    background-color:#fff;
+}

@@ -58,7 +58,7 @@ i.logo {
     main {
         overflow: auto;
         display: grid;
-        grid-template-columns: "1fr";
+        grid-template-columns: 100%;
         grid-template-areas:
             'lc'
             'rc';
@@ -75,7 +75,7 @@ i.logo {
     main {
         overflow: auto;
         display: grid;
-        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             'lc rc rc'
             'lc rc rc';
@@ -92,7 +92,7 @@ i.logo {
     main {
         overflow: auto;
         display: grid;
-        grid-template-columns: "1fr 1fr 1fr";
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             'rc rc lc'
             'rc rc lc';

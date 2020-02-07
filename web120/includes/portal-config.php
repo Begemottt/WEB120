@@ -31,24 +31,28 @@ switch(THIS_PAGE){
         $title = "Robin's WEB120 Title Page";
         $logo = "fa-home";
         $PageID = 'Welcome';
+        $style = 'portal';
     break;
 
     case 'contactme.php':
         $title = 'Contact';
         $logo = 'fa-pen-square';
         $PageID = 'Contact Robin';
+        $style = 'portal';
     break;
 
     case 'aia.php':
         $title = 'Robins Final Project AIA';
         $logo = "fa-universal-access";
         $PageID = 'AIA';
+        $style = 'aia';
     break;
 
     default:
         $title = THIS_PAGE;
         $logo = 'fa-home';
         $PageID = 'Welcome';
+        $style = 'portal';
 }
 
 /*

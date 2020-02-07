@@ -16,6 +16,7 @@
         <!-- CSS Style-->
         <link rel="stylesheet" href="css/portal.css">
         <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/<?=$style?>.css">
 
         <!-- Font Awesome JavaScipt file -->
         <script src="https://kit.fontawesome.com/e63bcbdc5d.js" crossorigin="anonymous"></script>
