@@ -1,0 +1,89 @@
+<!DOCTYPE html />
+<html lang=en>
+    <head>
+        <title>One Perfect Page</title>
+
+        <!-- Meta Boilerplate -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex,nofollow" />
+
+        <!-- Links for Google Fonts and CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- MenuMaker Plugin -->
+        <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js"></script>
+
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        
+    </head>
+    <body>
+        <header>
+
+            <!-- Menu created using CSS Menu Maker -->
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="rtvgilder.com/web120" target="_blank"><i class="fa fa-fw fa-bank"></i> Home</a></li>
+                    <li><a href="rtvgilder.com/web120/big/"><i class="fa fa-fw fa-home"></i> BIG</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-bars"></i> Research</a>
+                        <ul>
+                            <li><a href="research_r_v_m.php"><i class="fa fa-fw fa-comments"></i> Responsive vs Mobile</a></li>
+                            <li><a href="research_galleries.php"><i class="fa fa-fw fa-file-image-o"></i> Galleries</a></li>
+                            <li><a href="research_flexbox.php"><i class="fa fa-fw fa-newspaper-o"></i> Flexbox</a></li>
+                            <li><a href="research_shopping.php"><i class="fa fa-fw fa-cart-arrow-down"></i> Shopping Carts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-fw fa-bars"></i> Embeds</a>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-fw fa-play"></i> Video</a></li>
+                            <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
+                            <li><a href="#"><i class="fa fa-fw fa-cubes"></i> Gallery</a></li>
+                            <li><a href="#"><i class="fa fa-fw fa-map-marker"></i> Map</a></li>
+                            <li><a href="#"><i class="fa fa-fw fa-users"></i> Live Cams</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.php"><i class="fa fa-fw fa-envelope-o"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <h1 class="pageid">BIG Homepage</h1>
+
+        </header>
+
+        <main>
+            <article class="left_column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <article class="right_column">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p><small>&copy; <?php echo date('Y');?> by <a href="contactme.php">Robin VanGilder</a>, All Rights Reserved ~
+            <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+            <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+        </footer>
+
+
+        <!-- jQuery script for the nav menu -->
+        <script>
+            $("#cssmenu").menumaker({
+                title: "Menu",
+                breakpoint: 768,
+                format: "multitoggle"
+            });
+        </script>
+
+
+    </body>
+
+</html>

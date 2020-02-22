@@ -1,0 +1,104 @@
+/* Default Fonts */
+header {
+    font-family: 'Montserrat', serif;
+}
+main {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+footer {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Default background and text colors */
+html {
+    background-color: #472C00;
+    color: #bbb;
+}
+/* Styles for the page ID at the top */
+h1.pageid {
+    font-size: 24px;
+    color: #2689E0;
+    padding: 20px 5px 5px 10px;
+}
+
+/* Link styles! */
+a{
+    text-decoration: none;
+    color: #C75922;
+}
+a:hover {
+    text-decoration: none;
+    color: #0A5494;
+}
+
+/* Styles to keep footer at the bottom of the page and centered */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #541F04;
+    text-align: center;
+}
+
+article.right_column {
+    background-color: #541F04;
+    border: 1px solid #945B00;
+}
+
+/* Styles for the embedded SEO video */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Styles for phone screen sizes */
+@media all and (max-width: 699px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    article.left_column{
+        margin: 10px;
+    }
+    article.right_column{
+        margin: 10px;
+    }
+
+    div.month_view {
+        display: none;
+    }
+}
+
+/* Styles for desktop sreen sizes */
+@media all and (min-width: 700px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    article.left_column{
+        flex-basis: 65%;
+        padding: 10px;
+    }
+    article.right_column{
+        flex-basis: 25%;
+        padding: 10px;
+    }
+    
+    div.agenda_view{
+        display: none;
+    }
+}
