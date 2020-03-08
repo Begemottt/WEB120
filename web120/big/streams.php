@@ -4,9 +4,7 @@
 
     <article class="left_column">
 
-        <div class='embed-container'><iframe src='https://www.youtube.com/embed/RgVs8mkgHSU' frameborder='0' allowfullscreen></iframe></div>
-
-        
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/5qap5aO4i9A' frameborder='0' allowfullscreen></iframe></div>
 
     </article>
 
