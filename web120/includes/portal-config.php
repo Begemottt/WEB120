@@ -21,7 +21,7 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
     $nav1['index.php'] = "Welcome";
     $nav1['big/index.php'] = "Big";
     $nav1['aia.php'] = "AIA";
-    $nav1['flowchart.php'] = "Flowchart";
+    $nav1['https://docs.google.com/document/d/1JqH0KIgY_vi5A-3rBSJMtG-NN-VMKA9nQmgX_sW9Gtg/edit?usp=sharing'] = "Flowchart";
     $nav1['fp/index.php'] = "Final Project";
     $nav1['contactme.php'] = "Contact Robin";
 

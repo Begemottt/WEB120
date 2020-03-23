@@ -1,0 +1,63 @@
+/* Styles for the nav bar */
+
+header{
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+}
+
+div.topnav {
+    margin: 0;
+    padding: 0;
+    background-color: #805C34;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    text-align: center;
+}
+  
+a.navbutton {
+    color: #fff;
+    text-align: center;
+    padding: 1vh;
+    line-height: 4vh;
+    text-decoration: none;
+    flex-grow: 1;
+    font-size: 6vh;
+    border: 1px solid #FFB969;
+    font-family: 'Lobster Two', sans-serif;
+    transition: background-color 0.5s;
+}
+  
+a.navbutton:hover, a.navbutton:focus, a.navbutton:focus-within {
+    color: #805C34;
+    background-color: #FFB969;
+    border: 1px solid #805C34;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: border 0.5s
+}
+
+img#birdLogo {
+    height: 15vh;
+    width: 15vh;
+    position: absolute;
+    left: 1vh;
+    top: 5vh;
+    z-index: 10;
+}
+
+@media all and (max-width: 900px) {
+    p.navtext {
+        display: none;
+    }
+}
+
+@media all and (min-width: 901px) {
+    i.fas {
+        display: none;
+    }
+}

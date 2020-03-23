@@ -1,0 +1,109 @@
+/* Default Fonts */
+main {
+    font-family: 'Montserrat', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lobster Two', serif;
+    color: #007EB3;
+}
+
+html {
+    background-color: #CC7716;
+}
+
+/* Sizing of text in various forms */
+p {
+    font-size: 2.5vh;
+}
+h1 {
+    font-size: 4vh;
+}
+h2 {
+    font-size: 3vh;
+}
+h2.pageid {
+    color: #FFC619;
+}
+
+/* Make images fill their container */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #555;
+}
+a:hover {
+    text-decoration: none;
+    color: #111;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+/* Styles for various content boxes */
+.addressbox, .calendarbox, .textbox {
+    background-color: #FFB969;
+}
+article.addressbox {
+    height: 50vh;
+    padding: 2vh;
+}
+article.calendarbox {
+    height: 100vh;
+}
+article.textbox {
+    padding: 2vh;
+}
+div.gallery {
+    margin: 2vh;
+}
+div.pageheader {
+    display: inline-block;
+    text-align: center;
+    padding: 10vh;
+}
+
+/* Styles to keep footer at the bottom of the page and centered */
+footer {
+    font-family: 'Roboto Condensed', serif;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFB969;
+    text-align: center;
+}
+
+/* Styles for phone screen sizes */
+@media all and (max-width: 900px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    article#leftcolumn{
+        padding: 0px 3vh 0px 3vh;
+    }
+    article#rightcolumn{
+        padding: 3vh;
+    }
+}
+
+/* Styles for desktop screen sizes */
+@media all and (min-width: 901px){
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    article#leftcolumn{
+        flex-basis: 70%;
+        /* padding: 0px 3vh 0px 3vh; */
+    }
+    article#rightcolumn{
+        flex-basis: 25%;
+        padding: 2vh;
+    }
+}
